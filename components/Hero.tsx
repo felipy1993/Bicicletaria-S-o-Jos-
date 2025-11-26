@@ -1,14 +1,9 @@
 import React from 'react';
 import { MessageCircle, Settings, Disc, Cog } from 'lucide-react';
-import LogoPlaceholder from './LogoPlaceholder';
+import Logo from './Logo';
 import { WHATSAPP_NUMBER } from '../constants';
 
-interface HeroProps {
-  logoUrl: string | null;
-  onLogoUpload: (url: string) => void;
-}
-
-const Hero: React.FC<HeroProps> = ({ logoUrl, onLogoUpload }) => {
+const Hero: React.FC = () => {
   return (
     <section className="relative min-h-[90vh] flex flex-col justify-center pt-20 sm:pt-24 pb-12 sm:pb-16 overflow-hidden bg-brand-darker">
       
@@ -54,7 +49,7 @@ const Hero: React.FC<HeroProps> = ({ logoUrl, onLogoUpload }) => {
         
         {/* Logo Container */}
         <div className="mb-4 sm:mb-6 relative group">
-           <LogoPlaceholder url={logoUrl} onUpload={onLogoUpload} variant="hero" />
+           <Logo variant="hero" />
         </div>
 
         {/* Headlines: Performance Máxima */}

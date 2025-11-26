@@ -1,13 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
-import LogoPlaceholder from './LogoPlaceholder';
+import Logo from './Logo';
 
-interface HeaderProps {
-  logoUrl: string | null;
-  onLogoUpload: (url: string) => void;
-}
-
-const Header: React.FC<HeaderProps> = ({ logoUrl, onLogoUpload }) => {
+const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -42,7 +37,7 @@ const Header: React.FC<HeaderProps> = ({ logoUrl, onLogoUpload }) => {
           
           {/* Logo Section */}
           <div className="flex-shrink-0 flex items-center">
-            <LogoPlaceholder url={logoUrl} onUpload={onLogoUpload} variant="header" />
+            <Logo variant="header" />
           </div>
 
           {/* Desktop Navigation */}

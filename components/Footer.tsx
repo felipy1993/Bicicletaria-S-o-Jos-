@@ -1,19 +1,14 @@
 import React from 'react';
-import LogoPlaceholder from './LogoPlaceholder';
+import Logo from './Logo';
 
-interface FooterProps {
-  logoUrl: string | null;
-  onLogoUpload: (url: string) => void;
-}
-
-const Footer: React.FC<FooterProps> = ({ logoUrl, onLogoUpload }) => {
+const Footer: React.FC = () => {
   return (
     <footer className="bg-black text-white py-10 sm:py-12 border-t border-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6 sm:gap-8">
           
           <div className="flex flex-col items-center md:items-start">
-            <LogoPlaceholder url={logoUrl} onUpload={onLogoUpload} variant="footer" />
+            <Logo variant="footer" />
             <p className="mt-3 sm:mt-4 text-gray-500 text-xs sm:text-sm max-w-xs text-center md:text-left">
               Oficina especializada em manutenção de bicicletas. Qualidade e confiança em Guapiaçu.
             </p>

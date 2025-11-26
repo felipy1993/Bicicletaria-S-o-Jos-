@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Services from './components/Services';
@@ -9,26 +9,19 @@ import Footer from './components/Footer';
 import FloatingWhatsApp from './components/FloatingWhatsApp';
 
 const App: React.FC = () => {
-  // Central state for the logo image
-  const [logoUrl, setLogoUrl] = useState<string | null>(null);
-
-  const handleLogoUpload = (url: string) => {
-    setLogoUrl(url);
-  };
-
   return (
     <div className="min-h-screen bg-brand-dark font-sans text-gray-100 selection:bg-brand-blue selection:text-white">
-      <Header logoUrl={logoUrl} onLogoUpload={handleLogoUpload} />
+      <Header />
       
       <main>
-        <Hero logoUrl={logoUrl} onLogoUpload={handleLogoUpload} />
+        <Hero />
         <Services />
         <Location />
         <Hours />
         <Contact />
       </main>
 
-      <Footer logoUrl={logoUrl} onLogoUpload={handleLogoUpload} />
+      <Footer />
       <FloatingWhatsApp />
     </div>
   );
