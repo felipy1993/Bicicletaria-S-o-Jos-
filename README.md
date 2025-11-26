@@ -1,20 +1,74 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Bicicletaria São José - Website
 
-# Run and deploy your AI Studio app
+Site institucional da Bicicletaria São José em Guapiaçu-SP.
 
-This contains everything you need to run your app locally.
+## 🚀 Deploy no Vercel
 
-View your app in AI Studio: https://ai.studio/apps/drive/1oiOrNjGYqbgGFBnIOJsT0-5QdFjS3BLM
+### Passo a Passo:
 
-## Run Locally
+1. **Acesse o Vercel:**
+   - Vá para [vercel.com](https://vercel.com)
+   - Faça login com sua conta do GitHub
 
-**Prerequisites:**  Node.js
+2. **Importe o Projeto:**
+   - Clique em "Add New Project"
+   - Selecione "Import Git Repository"
+   - Escolha o repositório `Bicicletaria-S-o-Jos-`
 
+3. **Configurações de Deploy:**
+   - **Framework Preset:** Vite
+   - **Build Command:** `npm run build`
+   - **Output Directory:** `dist`
+   - **Install Command:** `npm install`
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+4. **Deploy:**
+   - Clique em "Deploy"
+   - Aguarde o build finalizar
+   - Seu site estará disponível em: `https://[seu-projeto].vercel.app`
+
+### Deploy Automático:
+
+Após a configuração inicial, o Vercel fará deploy automático sempre que você fizer push para a branch `main`.
+
+## 🛠️ Desenvolvimento Local
+
+```bash
+# Instalar dependências
+npm install
+
+# Rodar servidor de desenvolvimento
+npm run dev
+
+# Build para produção
+npm run build
+
+# Preview do build
+npm run preview
+```
+
+## 📱 Recursos
+
+- ✅ 100% Responsivo (Mobile, Tablet, Desktop)
+- ✅ Logo oficial da Bicicletaria
+- ✅ Integração com WhatsApp
+- ✅ Mapa do Google Maps
+- ✅ Animações suaves
+- ✅ Design moderno e profissional
+
+## 🎨 Tecnologias
+
+- React 19
+- TypeScript
+- Vite
+- TailwindCSS
+- Lucide Icons
+
+## 📞 Contato
+
+**Bicicletaria São José**
+- Endereço: R. das Orquídeas, 170 - Guapiaçu/SP
+- WhatsApp: (17) 99159-3333
+
+---
+
+Desenvolvido com IA
